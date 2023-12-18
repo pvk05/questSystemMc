@@ -1,0 +1,11 @@
+name: questSystem
+version: '1.0'
+main: me.philip.questsystem.QuestSystem
+api-version: '1.20'
+commands:
+  quests:
+    description: Opens the quest menu
+  testMoney:
+    description: Test
+  import:
+    description: Import quest command
