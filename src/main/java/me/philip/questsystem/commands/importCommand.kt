@@ -15,6 +15,5 @@ class importCommand : CommandExecutor {
         val gist = github.getGist("942b9c9034279007b652b946549ac4b0")
         QuestSystem.plugin.logger.info(gist.toString())
         return false
-
     }
 }
