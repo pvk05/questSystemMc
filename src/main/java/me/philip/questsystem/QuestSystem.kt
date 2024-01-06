@@ -31,7 +31,7 @@ class QuestSystem : JavaPlugin() {
         //config.options().copyDefaults()
         //saveDefaultConfig()
 
-        ImportQuests().importQuests()
+        logger.info(ImportQuests().importQuests())
 
     }
 

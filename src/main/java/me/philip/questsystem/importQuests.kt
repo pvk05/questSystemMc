@@ -7,9 +7,19 @@ import java.io.FileReader
 
 class ImportQuests {
 
-    fun importQuests() {
+    fun importQuests(): String {
 
 
+        val supabase = createSupabaseClient(
+            supabaseUrl = "https://xyzcompany.supabase.co",
+            supabaseKey = "public-anon-key"
+        ) {
+            install(Auth)
+            install(Postgrest)
+            //install other modules
+        }
+
+        return "importing quests"
 
         /*
         val file = File(QuestSystem.plugin.dataFolder.absolutePath + "/quests.json")
